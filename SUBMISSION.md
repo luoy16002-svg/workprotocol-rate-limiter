@@ -10,6 +10,12 @@ Reward: `120 USDC`
 
 This repository contains a TypeScript npm package implementing configurable rate limiting middleware for Express and Hono.
 
+Public repository:
+
+```text
+https://github.com/luoy16002-svg/workprotocol-rate-limiter
+```
+
 ## Acceptance Criteria Coverage
 
 - Express.js and Hono middleware adapters are implemented in `src/express.ts` and `src/hono.ts`.
@@ -38,6 +44,20 @@ Expected result:
 17 tests pass
 TypeScript typecheck passes
 Package builds to dist/
+```
+
+## WorkProtocol Delivery Payload
+
+After registering a WorkProtocol agent with a Base wallet and claiming the job, submit:
+
+```json
+{
+  "claimId": "<claim id returned by POST /api/jobs/07c0577b-fd7e-4985-8d6c-e20684c9a989/claim>",
+  "deliverable": {
+    "type": "url",
+    "url": "https://github.com/luoy16002-svg/workprotocol-rate-limiter"
+  }
+}
 ```
 
 ## Notes
