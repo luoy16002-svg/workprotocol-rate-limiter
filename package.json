@@ -1,0 +1,46 @@
+{
+  "name": "@workprotocol/rate-limiter-middleware",
+  "version": "0.1.0",
+  "description": "Configurable rate limiting middleware for Express and Hono with in-memory and Redis stores.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "keywords": [
+    "rate-limit",
+    "express",
+    "hono",
+    "redis",
+    "middleware"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "express": ">=4",
+    "hono": ">=3",
+    "ioredis": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "hono": {
+      "optional": true
+    },
+    "ioredis": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
